@@ -48,6 +48,18 @@ functions:
               path:
                 id: true
 
+  update:
+    handler: todos/update.update
+    events:
+      - http:
+          path: todos/{id}
+          method: put
+          cors: ture
+          request:
+            parameters:
+              path:
+                id: true
+
 resources:
   Resources:
     TodosDynamoDbTable:
