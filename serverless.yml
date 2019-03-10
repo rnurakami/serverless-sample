@@ -36,6 +36,17 @@ functions:
           method: get
           cors: true
 
+  get:
+    handler: todos/get.get
+    events:
+      - http:
+          path: todos/{id}
+          method: get
+          cors: true
+          request:
+            parameters:
+              path:
+                id: true
 
 resources:
   Resources:
