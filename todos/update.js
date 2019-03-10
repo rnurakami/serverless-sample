@@ -34,7 +34,7 @@ module.exports.update = (event, context, callback) => {
         },
         UpdateExpression: 'SET #todo_text = :text, checked = :checked, updatedAt = :updatedAt',
         ReturnValues: 'ALL_NEW',
-    },
+    };
     
     dynamodb.update(params, (error, result) => {
         
