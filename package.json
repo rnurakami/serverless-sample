@@ -1,0 +1,9 @@
+{
+  "name": "serverless-sample",
+  "version": "0.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "dependencies": {
+    "uuid": "^2.0.3"
+  }
+}
