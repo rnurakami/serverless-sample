@@ -60,6 +60,18 @@ functions:
               path:
                 id: true
 
+  delete:
+    handler: todos/delete.delete
+    events:
+      - http:
+          path: todos/{id}
+          method: delete
+          cors: true
+          request:
+            parameters:
+              path:
+                id: true
+
 resources:
   Resources:
     TodosDynamoDbTable:
